@@ -13,7 +13,7 @@ const Data = [
 ]
 
 const UserListing = () => {
-    const renderItem = ({ item }) => {
+    const renderItem = ({ }) => {
         return (
             <View style={styles.container}>
                 <Text>{item.name}</Text>
