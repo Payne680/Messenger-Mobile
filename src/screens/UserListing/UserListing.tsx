@@ -16,7 +16,7 @@ const UserListing = () => {
     const renderItem = ({ }) => {
         return (
             <View style={styles.container}>
-                <Text>{item.name}</Text>
+                <Text>{name}</Text>
             </View>
         );
     }
