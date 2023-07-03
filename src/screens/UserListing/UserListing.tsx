@@ -6,7 +6,8 @@ import { images } from '../../images';
 
 export type users = {
     item: any;
-}
+};
+
 const Data = [
     { id: 1, name: 'Jack Hallow', image: '', lastMessage: 'You: Wassup man! + 9:40 AM' },
     { id: 2, name: 'Andrew Parker', image: '', lastMessage: 'You: All good fam! + 9:40 AM' },
@@ -22,8 +23,8 @@ const UserListing = () => {
             <View style={styles.UserItemContainer}>
                 <Image source={images.user_1} style={styles.userIcon} />
                 <View style={styles.UserDetailsSection}>
-                    <Text>{item.name}</Text>
-                    <Text>{item.lastMessage}</Text>
+                    <Text style={styles.lable1}>{item.name}</Text>
+                    <Text style={styles.lable2}>{item.lastMessage}</Text>
                 </View>
             </View>
         );

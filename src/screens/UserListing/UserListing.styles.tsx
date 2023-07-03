@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import { colors } from "../../theme/colors";
 
 export const styles = StyleSheet.create({
     container: {},
@@ -7,6 +8,7 @@ export const styles = StyleSheet.create({
         display: 'flex',
         flexDirection: 'row',
         padding: 15,
+        alignItems: 'center',
     },
 
     userIcon: {
@@ -15,6 +17,19 @@ export const styles = StyleSheet.create({
     },
 
     UserDetailsSection: {
-        alignItems: 'center',
+        marginLeft: 15,
+    },
+
+    lable1: {
+        color: colors.zblack,
+        fontSize: 17,
+        fontWeight: '500',
+        lineHeight: 22,
+    },
+
+    lable2: {
+        color: colors.zblack,
+        opacity: 0.5,
+        fontWeight: '400',
     }
 });
