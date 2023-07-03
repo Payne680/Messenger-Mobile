@@ -7,7 +7,8 @@ export const styles = StyleSheet.create({
     UserItemContainer: {
         display: 'flex',
         flexDirection: 'row',
-        padding: 15,
+        paddingHorizontal: 15,
+        paddingVertical: 10,
         alignItems: 'center',
     },
 
@@ -18,6 +19,9 @@ export const styles = StyleSheet.create({
 
     UserDetailsSection: {
         marginLeft: 15,
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        flex: 15,
     },
 
     lable1: {
@@ -31,5 +35,10 @@ export const styles = StyleSheet.create({
         color: colors.zblack,
         opacity: 0.5,
         fontWeight: '400',
+    },
+
+    userViewMessage: {
+        width: 20,
+        height: 20,
     }
 });
