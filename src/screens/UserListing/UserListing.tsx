@@ -1,22 +1,30 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { View, Text, Image } from 'react-native'
 import { styles } from './UserListing.styles';
 import { SwipeListView } from 'react-native-swipe-list-view';
+import { images } from '../../images';
 
 export type users = {
-    name: string;
-    item: string;
+    item: any;
 }
 const Data = [
-    { id: 1, name: 'Jack Hallow', image: '' },
-    { id: 2, name: 'Jack Smith', image: '' },
+    { id: 1, name: 'Jack Hallow', image: '', lastMessage: 'You: Wassup man! + 9:40 AM' },
+    { id: 2, name: 'Andrew Parker', image: '', lastMessage: 'You: All good fam! + 9:40 AM' },
+    { id: 3, name: 'karen Castillo', image: '', lastMessage: 'You: Ok thanks! + 9:50 AM' },
+    { id: 4, name: 'Maisey Humphrey', image: '', lastMessage: 'You: Ok see you in To... + Fri' },
+    { id: 5, name: 'Joshua lawrence', image: '', lastMessage: 'Have a good day, Maisey + Fri' },
+    { id: 6, name: 'Penn Malone', image: '', lastMessage: 'The business plan loo.. + Thu' },
 ]
 
 const UserListing = () => {
-    const renderItem = ({ }) => {
+    const renderItem: React.FC<users> = ({ item }) => {
         return (
-            <View style={styles.container}>
-                <Text>{name}</Text>
+            <View style={styles.UserItemContainer}>
+                <Image source={images.user_1} style={styles.userIcon} />
+                <View style={styles.UserDetailsSection}>
+                    <Text>{item.name}</Text>
+                    <Text>{item.lastMessage}</Text>
+                </View>
             </View>
         );
     }
