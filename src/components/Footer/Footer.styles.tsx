@@ -4,7 +4,7 @@ const width = Dimensions.get('window').width;
 export const styles = StyleSheet.create({
     bg: {
         width: width,
-        height: 86,
+        height: 90,
     },
 
     text: {
