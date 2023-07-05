@@ -18,7 +18,7 @@ export default function App() {
             let iconName;
 
             if (route.name === 'Chats') {
-              iconName = focused ? images.chat_active : images.user_6;
+              iconName = focused ? images.chat_active : '';
             } else if (route.name === 'People') {
               iconName = focused ? images.people : '';
             } else if (route.name === 'Discover') {
@@ -26,12 +26,12 @@ export default function App() {
             }
 
             // You can return any component that you like here!
-            return <Image source={iconName} />;
+            return <Image source={iconName} style={styles.tab_icons} />;
           },
           tabBarActiveTintColor: 'black',
           tabBarInactiveTintColor: 'gray',
-          // headerShown: false,
-          // tabBarShowLabel: false,
+          headerShown: false,
+          tabBarShowLabel: false,
         })}>
           <Tab.Screen name="Chats" component={Chats} />
           <Tab.Screen name="People" component={People} />
@@ -46,4 +46,9 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
   },
+
+  tab_icons: {
+    width: 40,
+    height: 40,
+  }
 });

@@ -44,7 +44,7 @@ export const styles = StyleSheet.create({
     },
     rowBack: {
         alignItems: 'center',
-        backgroundColor: '#DDD',
+        backgroundColor: '#fff',
         flex: 1,
         flexDirection: 'row',
         justifyContent: 'space-between',
