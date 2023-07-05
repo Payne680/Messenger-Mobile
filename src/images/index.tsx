@@ -8,4 +8,7 @@ export const images = {
     footerBg: require('../images/footerbg.png'),
     checked: require('../images/checked.png'),
     un_checked: require('../images/Unchecked.png'),
+    chat_active: require('../images/chat_active.png'),
+    peole: require('../images/people.png'),
+    discover: require('../images/discover.png'),
 };

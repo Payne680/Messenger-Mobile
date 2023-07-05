@@ -1,7 +1,6 @@
 import { View, Text, SafeAreaView } from 'react-native'
 import { styles } from './Chats.styles'
-import UserListing from '../UserListing/UserListing'
-import Footer from '../../components/Footer/Footer'
+import UserListing from './UserListing/UserListing';
 
 export default function Chats() {
     return (
@@ -16,9 +15,6 @@ export default function Chats() {
                 <Text>Story listing</Text>
             </View> */}
             <UserListing />
-            <View style={styles.footerWrapper}>
-                <Footer />
-            </View>
         </View>
     )
 }

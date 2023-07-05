@@ -2,7 +2,7 @@ import React from 'react'
 import { View, Text, Image } from 'react-native'
 import { styles } from './UserListing.styles';
 import { SwipeListView } from 'react-native-swipe-list-view';
-import { images } from '../../images';
+import { images } from '../../../images';
 
 export type users = {
     item: any;
