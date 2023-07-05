@@ -4,17 +4,9 @@ import UserListing from './UserListing/UserListing';
 
 export default function Chats() {
     return (
-        <View style={styles.container}>
-            <SafeAreaView>
-                <Text>Header</Text>
-            </SafeAreaView>
-            {/* <View>
-                <Text>Search bar</Text>
-            </View>
-            <View>
-                <Text>Story listing</Text>
-            </View> */}
+        <SafeAreaView style={styles.container}>
+            <Text>Header</Text>
             <UserListing />
-        </View>
+        </SafeAreaView>
     )
 }

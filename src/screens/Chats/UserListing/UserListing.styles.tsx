@@ -10,6 +10,7 @@ export const styles = StyleSheet.create({
         paddingHorizontal: 15,
         paddingVertical: 10,
         alignItems: 'center',
+        backgroundColor: '#fff'
     },
 
     userIcon: {
@@ -40,5 +41,32 @@ export const styles = StyleSheet.create({
     userViewMessage: {
         width: 20,
         height: 20,
-    }
+    },
+    rowBack: {
+        alignItems: 'center',
+        backgroundColor: '#DDD',
+        flex: 1,
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        paddingLeft: 15,
+    },
+    backTextWhite: {
+        color: '#FFF',
+    },
+    backRightBtn: {
+        alignItems: 'center',
+        bottom: 0,
+        justifyContent: 'center',
+        position: 'absolute',
+        top: 0,
+        width: 75,
+    },
+    backRightBtnLeft: {
+        backgroundColor: 'blue',
+        right: 75,
+    },
+    backRightBtnRight: {
+        backgroundColor: 'red',
+        right: 0,
+    },
 });

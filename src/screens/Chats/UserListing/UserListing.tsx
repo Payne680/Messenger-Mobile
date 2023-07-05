@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, Image } from 'react-native'
+import { View, Text, Image, TouchableOpacity } from 'react-native'
 import { styles } from './UserListing.styles';
 import { SwipeListView } from 'react-native-swipe-list-view';
 import { images } from '../../../images';
@@ -18,6 +18,19 @@ const Data = [
 ]
 
 const UserListing = () => {
+    const renderHiddenItem = () => (
+        <View style={styles.rowBack}>
+            <Text>Left</Text>
+            <TouchableOpacity
+                style={[styles.backRightBtn, styles.backRightBtnLeft]}>
+                <Text style={styles.backTextWhite}>Close</Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+                style={[styles.backRightBtn, styles.backRightBtnRight]}>
+                <Text style={styles.backTextWhite}>Delete</Text>
+            </TouchableOpacity>
+        </View>
+    );
     const renderItem: React.FC<users> = ({ item }) => {
         return (
             <View style={styles.UserItemContainer}>
@@ -33,10 +46,14 @@ const UserListing = () => {
         );
     }
     return (
-        <View>
-            <SwipeListView data={Data} renderItem={renderItem} />
-        </View>
-    )
+        <SwipeListView
+            data={Data}
+            renderItem={renderItem}
+            renderHiddenItem={renderHiddenItem}
+            leftOpenValue={-150}
+        />
+    );
 }
+
 
 export default UserListing;

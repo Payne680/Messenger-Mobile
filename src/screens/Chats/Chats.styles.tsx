@@ -11,4 +11,12 @@ export const styles = StyleSheet.create({
         position: 'absolute',
         bottom: 0,
     },
+    rowBack: {
+        alignItems: 'center',
+        backgroundColor: '#DDD',
+        flex: 1,
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        paddingLeft: 15,
+    },
 })

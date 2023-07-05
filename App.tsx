@@ -1,10 +1,11 @@
 import React from 'react'
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, View, Image } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Chats from './src/screens/Chats/Chats';
 import People from './src/screens/People/People';
 import Discover from './src/screens/Discover/Discover';
+import { images } from './src/images';
 
 export default function App() {
 
@@ -17,20 +18,20 @@ export default function App() {
             let iconName;
 
             if (route.name === 'Chats') {
-              iconName = focused
-                ? 'ios-information-circle'
-                : 'ios-information-circle-outline';
+              iconName = focused ? images.chat_active : images.user_6;
             } else if (route.name === 'People') {
-              iconName = focused ? 'ios-list' : 'ios-list-outline';
+              iconName = focused ? images.people : '';
             } else if (route.name === 'Discover') {
-              iconName = focused ? 'ios-list' : 'ios-list-outline';
+              iconName = focused ? images.discover : '';
             }
 
             // You can return any component that you like here!
-            return <Image source={{ '' }} />;
+            return <Image source={iconName} />;
           },
-          tabBarActiveTintColor: 'tomato',
+          tabBarActiveTintColor: 'black',
           tabBarInactiveTintColor: 'gray',
+          // headerShown: false,
+          // tabBarShowLabel: false,
         })}>
           <Tab.Screen name="Chats" component={Chats} />
           <Tab.Screen name="People" component={People} />
