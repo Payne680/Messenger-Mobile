@@ -11,7 +11,7 @@ const DATA = [
 export default function StorySlider() {
     return (
         <View style={styles.container}>
-            <FlatList horizontal data={DATA} />
+            {/* <FlatList horizontal data={DATA} /> */}
         </View>
     )
 }
