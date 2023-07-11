@@ -34,7 +34,7 @@ export default function App() {
           tabBarActiveTintColor: 'black',
           tabBarInactiveTintColor: 'black',
           headerShown: false,
-          tabBarShowLabel: false,
+          // tabBarShowLabel: false,
         })}>
           <Tab.Screen name="Chats" component={Chats} />
           <Tab.Screen name="Calls" component={Calls} />
