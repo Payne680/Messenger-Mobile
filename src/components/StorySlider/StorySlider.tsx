@@ -8,6 +8,7 @@ export type users = {
 }
 
 const DATA = [
+    { id: 0, image: images.your_story, user: 'Your story' },
     { id: 1, image: images.user_1, user: 'Joshua' },
     { id: 2, image: images.user_2, user: 'Martin' },
     { id: 3, image: images.user_3, user: 'Karen' },

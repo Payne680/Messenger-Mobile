@@ -20,5 +20,6 @@ export const images = {
     search: require('../images/images/search.png'),
     calls: require('../images/images/video.png'),
     calls_inactive: require('../images/images/video-call.png'),
+    your_story: require('../images/images/your-story.png'),
 };
 
