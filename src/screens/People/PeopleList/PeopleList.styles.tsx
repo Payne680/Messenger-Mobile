@@ -31,7 +31,10 @@ export const styles = StyleSheet.create({
         paddingHorizontal: 5,
         paddingVertical: 2,
         textAlign: 'center',
-        left: '5%',
+        left: '14%',
+        height: 13,
+        width: 13,
+        borderRadius: 50,
     },
 
     UserItemContainer: {

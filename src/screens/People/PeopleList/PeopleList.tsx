@@ -25,7 +25,7 @@ const PeopleListing = () => {
                 <View style={styles.rowContainer}>
                     <View style={styles.rowLeft}>
                         <Image source={item.image} style={styles.peopleIcon} />
-                        <Text style={styles.timeTag}>8 min</Text>
+                        <Text style={styles.timeTag}></Text>
                         <View style={styles.UserDetailsSection}>
                             <View>
                                 <Text style={styles.lable1}>{item.name}</Text>
