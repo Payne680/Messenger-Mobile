@@ -1,14 +1,18 @@
 import { View, Text, SafeAreaView } from 'react-native'
 import { styles } from './Chats.styles'
 import UserListing from './UserListing/UserListing';
-import ChatHeader from '../../components/ChatHeader/ChatHeader';
+import Header from '../../components/Header/Header';
 import SearchBox from '../../components/Searchbox/SearchBox';
 import StorySlider from '../../components/StorySlider/StorySlider';
+import { images } from '../../images';
 
 export default function Chats() {
     return (
         <SafeAreaView style={styles.container}>
-            <ChatHeader />
+            <Header heading='Chats'
+                icon1={images.take_photo}
+                icon2={images.new_message}
+            />
             <SearchBox />
             <StorySlider />
             <UserListing />

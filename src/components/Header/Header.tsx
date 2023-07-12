@@ -1,18 +1,25 @@
 import { View, Text, Image } from 'react-native'
 import React from 'react'
-import { styles } from './ChatHeader.styles'
+import { styles } from './Header.styles'
 import { images } from '../../images'
 
-export default function ChatHeader() {
+interface head {
+    heading: any,
+    icon1: any,
+    icon2: any,
+}
+
+
+export default function Header({ heading, icon1, icon2 }: head) {
     return (
         <View style={styles.container}>
             <View style={styles.row}>
                 <Image source={images.avatar} style={styles.avatar} />
-                <Text style={styles.title}>Chats</Text>
+                <Text style={styles.title}>{heading}</Text>
             </View>
             <View style={styles.row}>
-                <Image source={images.take_photo} style={styles.icon} />
-                <Image source={images.new_message} style={styles.icon} />
+                <Image source={icon1} style={styles.icon} />
+                <Image source={icon2} style={styles.icon} />
             </View>
         </View>
     )
