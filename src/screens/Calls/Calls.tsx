@@ -7,7 +7,7 @@ import { images } from '../../images'
 export default function Calls() {
     return (
         <View style={styles.container}>
-            <Header heading='Calls' icon1={images.calls}
+            <Header heading='Calls' icon1={images.phone}
                 icon2={images.calls}
             />
         </View>

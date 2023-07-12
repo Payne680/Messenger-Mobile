@@ -22,5 +22,7 @@ export const images = {
     calls_inactive: require('../images/images/video-call.png'),
     your_story: require('../images/images/your-story.png'),
     add_contact: require('../images/images/add-contact.png'),
+    phone: require('../images/images/call.png'),
+
 };
 
