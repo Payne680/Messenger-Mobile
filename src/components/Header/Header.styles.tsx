@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { colors } from '../../theme/colors';
 
 export const styles = StyleSheet.create({
     container: {
@@ -7,7 +8,10 @@ export const styles = StyleSheet.create({
         justifyContent: 'space-between',
         flexDirection: 'row',
     },
-    avatar: {
+    menu: {
+        borderRadius: 50,
+        padding: 5,
+        backgroundColor: colors.gray01,
         width: 40,
         height: 40,
         marginHorizontal: 15,

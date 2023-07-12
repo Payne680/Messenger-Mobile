@@ -21,5 +21,6 @@ export const images = {
     calls: require('../images/images/video.png'),
     calls_inactive: require('../images/images/video-call.png'),
     your_story: require('../images/images/your-story.png'),
+    add_contact: require('../images/images/add-contact.png'),
 };
 

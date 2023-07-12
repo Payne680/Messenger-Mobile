@@ -50,23 +50,4 @@ export const styles = StyleSheet.create({
         justifyContent: 'space-between',
         paddingLeft: 15,
     },
-    backTextWhite: {
-        color: '#FFF',
-    },
-    backRightBtn: {
-        alignItems: 'center',
-        bottom: 0,
-        justifyContent: 'center',
-        position: 'absolute',
-        top: 0,
-        width: 75,
-    },
-    backRightBtnLeft: {
-        backgroundColor: 'blue',
-        right: 75,
-    },
-    backRightBtnRight: {
-        backgroundColor: 'red',
-        right: 0,
-    },
 });
