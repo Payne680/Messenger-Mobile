@@ -3,8 +3,8 @@ import { styles } from './Chats.styles'
 import UserListing from './UserListing/UserListing';
 import Header from '../../components/Header/Header';
 import SearchBox from '../../components/Searchbox/SearchBox';
-import StorySlider from '../../components/StorySlider/StorySlider';
 import { images } from '../../images';
+import StorySlider from '../../components/StorySlider/StorySlider';
 
 export default function Chats() {
     return (
