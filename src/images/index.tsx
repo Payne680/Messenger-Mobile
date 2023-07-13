@@ -23,6 +23,11 @@ export const images = {
     your_story: require('../images/images/your-story.png'),
     add_contact: require('../images/images/add-contact.png'),
     phone: require('../images/images/call.png'),
-
+    people1: require('../images/images/people1.png'),
+    people2: require('../images/images/people2.png'),
+    people3: require('../images/images/people3.png'),
+    people4: require('../images/images/people4.png'),
+    people5: require('../images/images/people5.png'),
+    people6: require('../images/images/people6.png'),
 };
 

@@ -9,8 +9,8 @@ export const styles = StyleSheet.create({
         flex: 1,
     },
     peopleIcon: {
-        width: 60,
-        height: 60,
+        width: 40,
+        height: 40,
     },
     rowLeft: {
         flex: 1,
@@ -25,13 +25,13 @@ export const styles = StyleSheet.create({
     },
     timeTag: {
         position: 'absolute',
-        top: '70%',
+        top: '61%',
         fontSize: 8,
         backgroundColor: colors.green01,
         paddingHorizontal: 5,
         paddingVertical: 2,
         textAlign: 'center',
-        left: '14%',
+        left: '8%',
         height: 13,
         width: 13,
         borderRadius: 50,
