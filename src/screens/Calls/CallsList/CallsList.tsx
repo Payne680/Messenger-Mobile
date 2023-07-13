@@ -14,7 +14,13 @@ const Data = [
     { id: 3, name: 'karen Castillo', image: images.user_3, lastMessage: 'Incoming · 9:50 AM' },
     { id: 4, name: 'Maisey Humphrey', image: images.user_4, lastMessage: 'Outgoing · Fri' },
     { id: 5, name: 'Joshua lawrence', image: images.user_5, lastMessage: 'Missed · Fri' },
-    { id: 6, name: 'Penn Malone', image: images.user_6, lastMessage: 'Incoming· Thu' },
+    { id: 6, name: 'Penn Malone', image: images.user_6, lastMessage: 'Incoming · Thu' },
+    { id: 7, name: 'Karen Castillo', image: images.people3, lastMessage: 'Missed · Thu' },
+    { id: 8, name: 'Albert Lasker', image: images.people6, lastMessage: 'Incoming · 9 May' },
+    { id: 9, name: 'Andrew Parker', image: images.people2, lastMessage: 'Outgoing · 1 june' },
+    { id: 10, name: 'Maisy Humphrey', image: images.people4, lastMessage: 'Missed · 3 Sat' },
+    { id: 11, name: 'Martin Randolph', image: images.people1, lastMessage: 'Incoming· Mon' },
+    { id: 12, name: 'Tabitha Potter', image: images.people5, lastMessage: 'Missed · Thu' },
 ]
 
 const CallsList = () => {

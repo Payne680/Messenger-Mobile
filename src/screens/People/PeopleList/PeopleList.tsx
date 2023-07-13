@@ -13,14 +13,14 @@ const DATA = [
     { id: 2, image: images.people2, name: 'Kieron Dotson' },
     { id: 3, image: images.people3, name: 'Zack John' },
     { id: 4, image: images.people4, name: 'Jamie Franco' },
-    { id: 5, image: images.user_5, name: 'Tabitha Potter' },
-    { id: 6, image: images.user_6, name: 'Kieron Dotson' },
-    { id: 7, image: images.user_1, name: 'Tabitha Potter' },
-    { id: 8, image: images.user_3, name: 'Tabitha Potter' },
-    { id: 9, image: images.user_2, name: 'Tabitha Potter' },
-    { id: 10, image: images.user_4, name: 'Tabitha Potter' },
+    { id: 5, image: images.user_5, name: 'Joshua Lawrence' },
+    { id: 6, image: images.user_6, name: 'Penn Malone' },
+    { id: 7, image: images.user_1, name: 'Martin Randolph' },
+    { id: 8, image: images.user_3, name: 'Karen Castillo' },
+    { id: 9, image: images.user_2, name: 'Andrew Parker' },
+    { id: 10, image: images.user_4, name: 'Maisy Humphrey' },
     { id: 11, image: images.people5, name: 'Tabitha Potter' },
-    { id: 12, image: images.people6, name: 'Tabitha Potter' },
+    { id: 12, image: images.people6, name: 'Albert Lasker' },
 ];
 
 const PeopleListing = () => {
