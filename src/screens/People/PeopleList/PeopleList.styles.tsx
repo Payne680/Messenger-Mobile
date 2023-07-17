@@ -42,7 +42,7 @@ export const styles = StyleSheet.create({
         paddingHorizontal: 15,
         paddingVertical: 10,
         alignItems: 'center',
-        backgroundColor: '#fff'
+        backgroundColor: colors.white,
     },
 
     UserDetailsSection: {
