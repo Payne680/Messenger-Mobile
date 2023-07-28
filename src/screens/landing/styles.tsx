@@ -1,5 +1,6 @@
 import { StyleSheet } from "react-native";
 import { windowHeight, windowWidth } from "../../services/utils";
+import { AuthErrorCodes } from "firebase/auth";
 
 export const styles = StyleSheet.create({
   container: {
@@ -81,6 +82,18 @@ export const styles = StyleSheet.create({
     width: 50,
     marginHorizontal: 10,
     borderRadius: 50,
+  },
+  fbLogin: {
+    backgroundColor: "#0a7cff",
+    width: 80,
+    margin: "auto",
+    paddingHorizontal: 5,
+    paddingVertical: 10,
+  },
+  fbLoginTxt: {
+    color: "#fff",
+    fontSize: 22,
+    textAlign: "center",
   },
   signUpTextView: {
     marginTop: 40,

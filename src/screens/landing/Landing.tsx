@@ -13,8 +13,12 @@ import { LinearGradient } from "expo-linear-gradient";
 import { Icon } from "react-native-elements";
 import ComponentWithNavigationBar from "../../components/Header";
 import { styles } from "./styles";
-import { signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../../../firebase/config";
+import {
+  signInWithEmailAndPassword,
+  signInWithPopup,
+  FacebookAuthProvider,
+} from "firebase/auth";
+import { auth, provider } from "../../../firebase/config";
 
 export default function Landing() {
   useEffect(() => {
@@ -40,6 +44,41 @@ export default function Landing() {
       }
     }, 1000);
   };
+
+  const handleFacebookLogin = () => {
+    signInWithPopup(auth, provider)
+      .then((result: any) => {
+        setUser((prev: any) => [...prev, result.user]);
+      })
+      .catch((err) => {
+        throw err;
+      });
+  };
+
+  // signInWithPopup(auth, provider)
+  //   .then((result) => {
+  //     // The signed-in user info.
+  //     const user = result.user;
+
+  //     // This gives you a Facebook Access Token. You can use it to access the Facebook API.
+  //     const credential: null =
+  //       FacebookAuthProvider.credentialFromResult(result);
+  //     const accessToken = credential.accessToken;
+
+  //     // IdP data available using getAdditionalUserInfo(result)
+  //     // ...
+  //   })
+  //   .catch((error) => {
+  //     // Handle Errors here.
+  //     const errorCode = error.code;
+  //     const errorMessage = error.message;
+  //     // The email of the user's account used.
+  //     const email = error.customData.email;
+  //     // The AuthCredential type that was used.
+  //     const credential = FacebookAuthProvider.credentialFromError(error);
+
+  //     // ...
+  //   });
   return (
     <TouchableWithoutFeedback
       onPress={() => {
@@ -48,6 +87,7 @@ export default function Landing() {
     >
       <ScrollView>
         <View style={styles.container}>
+          {loading && <Text>loading</Text>}
           {/* <View style={styles.nav}>
 
         </View> */}
@@ -82,7 +122,7 @@ export default function Landing() {
           <TouchableOpacity>
             <Text style={styles.fpText}>Forgot Password?</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.loginButton}>
+          <TouchableOpacity style={styles.loginButton} onPress={signIn}>
             <Text style={styles.loginButtonText}>Login</Text>
           </TouchableOpacity>
           <View style={styles.loginWithBar}>
@@ -102,6 +142,14 @@ export default function Landing() {
               <Text style={[styles.signUpText, { color: "#0a7cff" }]}>
                 {" Sign Up"}
               </Text>
+            </TouchableOpacity>
+          </View>
+          <View>
+            <TouchableOpacity
+              style={styles.fbLogin}
+              onPress={handleFacebookLogin}
+            >
+              <Text style={styles.fbLoginTxt}>Login with FaceBook</Text>
             </TouchableOpacity>
           </View>
         </View>
